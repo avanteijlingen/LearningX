@@ -74,8 +74,7 @@ def main():
     explanations = model_tree.explain(X, header)
     loss = model_tree.loss(X, y, y_pred)
     print(" -> loss_train={:.6f}\n".format(loss))
-    model_tree.export_graphviz(os.path.join("output", "model_tree"), header,
-                               export_png=True, export_pdf=False)
+    #model_tree.export_graphviz(os.path.join("output", "model_tree"), header, export_png=True, export_pdf=False)
 
     # ====================
     # Save model tree results
